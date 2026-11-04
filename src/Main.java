@@ -1,8 +1,8 @@
 
-/**********************************************************************
+/** ********************************************************************
  * APLICACIÓN: "Familia5ExecutorCallable"
  **********************************************************************
- * PROGRAMACIÓN DE SERVICIOS Y PROCESOS 2DAM
+ * PROGRAMACIÓN DE SERVICIOS Y PROCESOS 2 DAM
   **********************************************************************
  * @author  GERARDO LUIS GARCIA LANDA
  * @version 1.0 - Versión inicial.
@@ -130,15 +130,13 @@ class Familia5
 
         // (intersección de las dos listas de resultados)
         l_Numero = 0;
-        while (l_Numero < l_ResultadosMultiplos.size())
-        {
+        while (l_Numero < l_ResultadosMultiplos.size()) {
             l_Valor = l_ResultadosMultiplos.get(l_Numero);
             l_Existe = false;
 
             // Comprobación de existencia en la segunda lista
             int l_Indice = 0;
-            while (l_Indice < l_ResultadosSumaDigitos.size())
-            {
+            while (l_Indice < l_ResultadosSumaDigitos.size()) {
                 if (l_ResultadosSumaDigitos.get(l_Indice).equals(l_Valor)) {
                     l_Existe = true;
                     break;
@@ -150,7 +148,6 @@ class Familia5
             }
             l_Numero = l_Numero + 1;
         }
-
 
         // Mostrar resultados por pantalla
         System.out.println("Números menores que " + MAXIMO
